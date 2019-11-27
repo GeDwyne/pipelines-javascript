@@ -17,7 +17,7 @@ app.get('/bye', (req, res) => {
 });
 
 app.get('/weather', (req, res) => {
-  res.send('Cloudy with a chance of lasagna\n');
+  res.send('Cloudy with a chance of pad thai\n');
 });
 
 var port = process.env.PORT||PORT;
