@@ -5,7 +5,7 @@ describe('String', function () {
         it('should return -1 when the substring is not present', function () {
             var myString = 'test';
 
-            assert.equal(-1, myString.indexOf('e'));
+            assert.equal(-1, myString.indexOf('x'));
             assert.equal(-1, myString.indexOf('y'));
         });
     });
