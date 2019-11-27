@@ -9,7 +9,11 @@ const HOST = '0.0.0.0';
 // App
 const app = express();
 app.get('/', (req, res) => {
-  res.send('Hello iTICKET USERZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZZ!\n');
+  res.send('Hello iTICKET User!\n');
+});
+
+app.get('/bye', (req, res) => {
+  res.send('Goodbye iTICKET User!\n');
 });
 
 var port = process.env.PORT||PORT;
