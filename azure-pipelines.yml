@@ -14,11 +14,11 @@ steps:
   inputs:
     versionSpec: '10.x'
   displayName: 'Install Node.js'
-- task: ArchiveFiles@2
+- task: ArchiveFiles@1
   inputs:
     rootFolderOrFile: '$(System.DefaultWorkingDirectory)'
     includeRootFolder: false
-- task: AzureWebApp@1
+- task: AzureWebApp@2
   inputs:
     azureSubscription: 'mymymy'
     appName: 'GeraldIsAwesome123'
