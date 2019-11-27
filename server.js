@@ -16,6 +16,10 @@ app.get('/bye', (req, res) => {
   res.send('Goodbye iTICKET User!\n');
 });
 
+app.get('/weather', (req, res) => {
+  res.send('Cloudy with a chance of lasagna\n');
+});
+
 var port = process.env.PORT||PORT;
 app.listen(port);
 console.log(`Running on http://${HOST}:${PORT}`);
